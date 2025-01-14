@@ -1,3 +1,4 @@
+/* Basic styling for body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -5,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Container styling */
 .container {
     max-width: 50%;
     margin: 50px auto;
@@ -17,10 +19,12 @@ body {
     box-sizing: border-box; 
 }
 
+/* Input container styling */
 .input-container {
     margin-bottom: 20px;
 }
 
+/* CD container styling */
 .cd-container {
     max-width: 500px;
     margin: 50px auto;
@@ -29,6 +33,7 @@ body {
     color: green; 
 }
 
+/* Heading styling */
 h1 {
     display: block;
     margin-left: auto;
@@ -36,12 +41,14 @@ h1 {
     text-align: center; 
 }
 
+/* Label styling */
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
+/* Text input field styling */
 input[type="text"] {
     width: calc(100% - 20px);
     padding: 10px;
@@ -49,6 +56,8 @@ input[type="text"] {
     border: 1px solid #ced4da;
     border-radius: 4px;
 }
+
+/* Number input field styling */
 .input-container input[type="number"] {
     width: 50%;
     padding: 12px;
@@ -58,10 +67,12 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+/* Button container styling */
 .button-container {
     text-align: center;
 }
 
+/* Button styling */
 .button-container button {
     padding: 12px 24px;
     font-size: 16px;
@@ -73,10 +84,12 @@ input[type="text"] {
     transition: background-color 0.3s;
 }
 
+/* Button hover effect */
 .button-container button:hover {
     background-color: #228b22;
 }
 
+/* Change due section styling */
 #change-due {
     margin-top: 20px;
     padding: 12px;
@@ -84,4 +97,62 @@ input[type="text"] {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+/* Media Queries for responsive design */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Adjust the width of the container */
+    .container {
+        max-width: 80%;
+    }
+
+    /* Adjust the width of the number input field */
+    .input-container input[type="number"] {
+        width: 100%;
+    }
+
+    /* Button padding and font-size adjustments */
+    .button-container button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    /* Adjust heading size */
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Further adjust the width of the container */
+    .container {
+        max-width: 95%;
+    }
+
+    /* Make the input fields more responsive */
+    input[type="text"], .input-container input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Further adjust button styling */
+    .button-container button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    /* Adjust the font size of the heading */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust margins and padding for smaller screens */
+    .cd-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
 }
